@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --port 3000 --open",
     "build": "webpack --mode development --verbose --colors --display-error-details",
-    "deploy": "node deploy-to-github.js"
+    "deploy": "node deploy-to-github.js",
+    "gh-deploy-init": "git push origin && git subtree push --prefix src origin gh-pages"
   },
   "repository": {
     "type": "git",
