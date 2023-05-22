@@ -9,17 +9,17 @@ window.onload = () => {
 };
 
 let generateExcuse = () => {
-  let pronoun = ["A", "The"];
-  let subject = ["jogger", "racoon", "dog", "driver", "clown", "pine cone"];
-  let action = ["took my", "threw my", "yelled at my", "stole my", "bit my"];
-  let possession = ["homework", "toe", "car", "shoe"];
-  let where = ["on the street", "in my house", "in my driveway"];
+  const pronoun = ["A", "The"];
+  const subject = ["jogger", "racoon", "dog", "driver", "clown", "pine cone"];
+  const action = ["took my", "threw my", "yelled at my", "stole my", "bit my"];
+  const possession = ["homework", "toe", "car", "shoe"];
+  const where = ["on the street", "in my house", "in my driveway"];
 
-  let proIndx = Math.floor(Math.random() * pronoun.length);
-  let subjIndx = Math.floor(Math.random() * subject.length);
-  let actionIndx = Math.floor(Math.random() * action.length);
-  let possesionIndx = Math.floor(Math.random() * possession.length);
-  let whereIndx = Math.floor(Math.random() * where.length);
+  const proIndx = Math.floor(Math.random() * pronoun.length);
+  const subjIndx = Math.floor(Math.random() * subject.length);
+  const actionIndx = Math.floor(Math.random() * action.length);
+  const possesionIndx = Math.floor(Math.random() * possession.length);
+  const whereIndx = Math.floor(Math.random() * where.length);
 
   return (
     pronoun[proIndx] +
