@@ -8,6 +8,10 @@ window.onload = () => {
   });
 };
 
+function getRandomElement(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
 let generateExcuse = () => {
   const pronoun = ["A", "The"];
   const subject = ["jogger", "racoon", "dog", "driver", "clown", "pine cone"];
